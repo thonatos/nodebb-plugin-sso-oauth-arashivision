@@ -1,0 +1,11 @@
+{
+	"id": "nodebb-plugin-sso-oauth-arashivision",
+	"name": "NodeBB OAuth SSO For Arashivision",
+	"description": "NodeBB Plugin that allows users to login/register via any configured OAuth provider.",
+	"url": "https://github.com/thonatos/nodebb-plugin-sso-oauth-arashivision",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "static:user.delete", "method": "deleteUserData" },
+		{ "hook": "filter:auth.init", "method": "getStrategy" }
+	]
+}

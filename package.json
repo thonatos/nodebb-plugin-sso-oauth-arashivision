@@ -1,0 +1,37 @@
+{
+  "name": "nodebb-plugin-sso-oauth-arashivision",
+  "version": "0.1.0",
+  "description": "NodeBB Generic OAuth SSO For Arashivision",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thonatos/nodebb-plugin-sso-oauth-arashivision.git"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "oauth",
+    "oauth2",
+    "sso",
+    "single sign on",
+    "login",
+    "registration"
+  ],
+  "author": {
+    "name": "Suyi(Thonatos.Yang)",
+    "email": "thonatos.yang@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thonatos/nodebb-plugin-sso-oauth-arashivision/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "passport-oauth": "~1.0.0"
+  },
+  "nbbpm": {
+    "compatibility": "^1.0.1",
+    "index": false
+  }
+}
