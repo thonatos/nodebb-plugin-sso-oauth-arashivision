@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sso-oauth-arashivision",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NodeBB Generic OAuth SSO For Arashivision",
   "main": "library.js",
   "repository": {
