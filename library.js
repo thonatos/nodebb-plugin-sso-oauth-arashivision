@@ -50,7 +50,7 @@
 
 	var constants = Object.freeze({
 		type: 'oauth2',
-		name: 'arashivison',
+		name: 'arashivision',
 		scope: nconf.get('arashivision:scope'),
 		oauth2: {
 			tokenURL: nconf.get('arashivision:tokenURL'),
