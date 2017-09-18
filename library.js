@@ -52,13 +52,20 @@
 		type: 'oauth2',
 		name: 'arashivision',
 		scope: nconf.get('arashivision:scope'),
+		oauth: {
+			requestTokenURL: '',
+			accessTokenURL: '',
+			userAuthorizationURL: '',
+			consumerKey: nconf.get('oauth:key'),	// don't change this line
+			consumerSecret: nconf.get('oauth:secret'),	// don't change this line
+		},
 		oauth2: {
+			authorizationURL: nconf.get('arashivision:authorizationURL'),
 			tokenURL: nconf.get('arashivision:tokenURL'),
 			clientID: nconf.get('arashivision:clientID'),
 			clientSecret: nconf.get('arashivision:clientSecret'),
-			authorizationURL: nconf.get('arashivision:authorizationURL'),
 		},
-		userRoute: nconf.get('arashivision:authorizationURL') + nconf.get('arashivision:clientID')
+		userRoute: nconf.get('arashivision:userRoute')
 	}),
 		configOk = false,
 		OAuth = {}, passportOAuth, opts;
